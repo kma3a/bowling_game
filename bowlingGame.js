@@ -3,7 +3,7 @@ var BowlingGame = {
 	scoreFrame: [],
 	currentTotal: 0,
 	roll: function(endNum){
-		return 2;
+		return Math.random() * endNum;
 	}
 
 
