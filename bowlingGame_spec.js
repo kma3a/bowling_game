@@ -12,9 +12,10 @@ describe("Bowling Game", function() {
 	
 	it("has a total that initializes at 0", function() {
 		expect(BowlingGame.currentTotal).toEqual(0);
-	})
+	});
 
-	it("calling roll will give you a random number between 0 and the number 10", function(){
-		expect(BowlingGame.roll(10)).toBeWithinRange(0,10);
-	})
+	it("calling roll(10) will give num between 0-10", function(){
+		expect(BowlingGame.roll(10)).toBeLessThan(11);
+		expect(BowlingGame.roll(10)).toBeGreaterThan(0);
+	});
 })
