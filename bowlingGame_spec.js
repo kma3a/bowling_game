@@ -20,13 +20,19 @@ describe("Bowling Game", function() {
 	});
 
 	it("calling roll(7) will give num between 0-7", function(){
-		expect(BowlingGame.roll(7)).toBeLessThan(7);
+		expect(BowlingGame.roll(7)).toBeLessThan(8);
 		expect(BowlingGame.roll(7)).toBeGreaterThan(0);
 	});
 	
 	it("will push the roll into the frame", function() {
 		BowlingGame.getRoll();
 		expect(BowlingGame.frame.length).toEqual(1);
+	});
+
+	it("will push the second roll into the frame and reset the frame", function() {
+		BowlingGame.getRoll();
+		expect(BowlingGame.frame.length).toEqual(0)
+		expect(BowlingGame.scoreFrame.length).toEqual(1)
 	});
 
 })
