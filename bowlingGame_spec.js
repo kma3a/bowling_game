@@ -14,4 +14,7 @@ describe("Bowling Game", function() {
 		expect(BowlingGame.currentTotal).toEqual(0);
 	})
 
+	it("calling roll will give you a random number between 0 and the number 10", function(){
+		expect(BowlingGame.roll(10)).toBeWithinRange(0,10);
+	})
 })
