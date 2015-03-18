@@ -1,6 +1,7 @@
 var BowlingGame = {
 	frame: [],
-	scoreFrame: []
+	scoreFrame: [],
+	currentTotal: 0
 
 
 }
