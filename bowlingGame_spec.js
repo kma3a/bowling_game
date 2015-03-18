@@ -1,4 +1,4 @@
-var bowlingGame = require('./bowlingGame.js');
+var BowlingGame = require('./bowlingGame.js');
 
 describe("Bowling Game", function() {
 
