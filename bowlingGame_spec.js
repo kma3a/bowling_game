@@ -23,5 +23,10 @@ describe("Bowling Game", function() {
 		expect(BowlingGame.roll(7)).toBeLessThan(7);
 		expect(BowlingGame.roll(7)).toBeGreaterThan(0);
 	});
+	
+	it("will push the roll into the frame", function() {
+		BowlingGame.getRoll();
+		expect(BowlingGame.frame.length).toEqual(1);
+	});
 
 })
