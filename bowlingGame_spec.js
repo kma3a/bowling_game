@@ -6,4 +6,8 @@ describe("Bowling Game", function() {
 		expect(BowlingGame.frame).toEqual([]);	
 	});
 
+	it("Starts with an empty array",function(){
+		expect(BowlingGame.scoreFrame).toEqual([]);	
+	});
+
 })
