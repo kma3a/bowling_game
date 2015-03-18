@@ -1,4 +1,5 @@
 var BowlingGame = {
+	frame: []
 
 }
 
