@@ -18,4 +18,10 @@ describe("Bowling Game", function() {
 		expect(BowlingGame.roll(10)).toBeLessThan(11);
 		expect(BowlingGame.roll(10)).toBeGreaterThan(0);
 	});
+
+	it("calling roll(7) will give num between 0-7", function(){
+		expect(BowlingGame.roll(7)).toBeLessThan(7);
+		expect(BowlingGame.roll(7)).toBeGreaterThan(0);
+	});
+
 })
