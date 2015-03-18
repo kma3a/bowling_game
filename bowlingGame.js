@@ -6,7 +6,13 @@ var BowlingGame = {
 		return Math.floor(Math.random() * endNum + 1);
 	},
 	getRoll: function() {
-		this.frame.push(this.roll(10));
+		if (this.frame.length === 0) {	
+			this.frame.push(this.roll(10));
+		} else {
+			this.frame.push(this.roll(this.frame[0]));
+			this.scoreFrame.push(this.frame);
+			this.frame = [];
+		}
 	}	
 
 
